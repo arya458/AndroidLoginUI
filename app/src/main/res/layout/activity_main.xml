@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hoonam.myapplication.MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/wallpaper" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layoutDirection="rtl">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/layout_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="30dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:id="@+id/fbf_email"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_sigin_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Email"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textEmailAddress"
+                        android:layoutDirection="rtl"
+                        android:shadowColor="@color/colorPrimary"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHighlight="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="14dp" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    android:id="@+id/fbf_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/et_sigin_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="PassWord"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layoutDirection="rtl"
+                        android:inputType="textPassword"
+                        android:shadowColor="@color/colorPrimary"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHighlight="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="14dp" />
+                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+            </LinearLayout>
+
+            <!--//-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/circle_b_bg_selector"
+                android:padding="10dp"
+                android:clickable="true"
+                android:src="@drawable/ic_check_black_24dp" />
+            <!---->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="Forgot PassWord?"
+                android:textColor="@drawable/text_selected"
+                android:padding="5dp"
+                android:clickable="true"
+                android:textSize="14dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:text="SingUp"
+                android:textColor="@drawable/text_selected"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
